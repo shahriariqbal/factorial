@@ -6,7 +6,7 @@ class App extends React.Component {
 
     this.state = {
       num: "",
-      result: ""
+      result: "",
     };
   }
 
@@ -30,7 +30,7 @@ class App extends React.Component {
     /* factorial(n); */
 
     this.setState({
-      result: factorial(n)
+      result: factorial(n),
     });
     event.preventDefault();
   };
@@ -49,7 +49,6 @@ class App extends React.Component {
           />
           <br />
           <button /* type="submit" */ onClick={this.exe}>
-        
             Calculate Factorial
           </button>
         </form>
